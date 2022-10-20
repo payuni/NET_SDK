@@ -1,0 +1,13 @@
+C:\文件\新增資料夾 (2)\payuni\example\bin\Debug\example.dll
+C:\文件\新增資料夾 (2)\payuni\example\bin\Debug\example.pdb
+C:\文件\新增資料夾 (2)\payuni\example\bin\Debug\payuniSDK.dll
+C:\文件\新增資料夾 (2)\payuni\example\bin\Debug\BouncyCastle.Crypto.dll
+C:\文件\新增資料夾 (2)\payuni\example\bin\Debug\Newtonsoft.Json.dll
+C:\文件\新增資料夾 (2)\payuni\example\bin\Debug\payuniSDK.pdb
+C:\文件\新增資料夾 (2)\payuni\example\bin\Debug\BouncyCastle.Crypto.xml
+C:\文件\新增資料夾 (2)\payuni\example\bin\Debug\Newtonsoft.Json.xml
+C:\文件\新增資料夾 (2)\payuni\example\obj\Debug\example.csproj.AssemblyReference.cache
+C:\文件\新增資料夾 (2)\payuni\example\obj\Debug\example.csproj.CoreCompileInputs.cache
+C:\文件\新增資料夾 (2)\payuni\example\obj\Debug\example.csproj.CopyComplete
+C:\文件\新增資料夾 (2)\payuni\example\obj\Debug\example.dll
+C:\文件\新增資料夾 (2)\payuni\example\obj\Debug\example.pdb

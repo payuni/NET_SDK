@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayuniSDK", "payuniSDK\PayuniSDK.csproj", "{72974FC0-6CD1-43AA-AF45-D53107963BEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "example\Example.csproj", "{166C222F-3922-4B49-B558-952709F1790A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72974FC0-6CD1-43AA-AF45-D53107963BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72974FC0-6CD1-43AA-AF45-D53107963BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72974FC0-6CD1-43AA-AF45-D53107963BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72974FC0-6CD1-43AA-AF45-D53107963BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{166C222F-3922-4B49-B558-952709F1790A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{166C222F-3922-4B49-B558-952709F1790A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{166C222F-3922-4B49-B558-952709F1790A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{166C222F-3922-4B49-B558-952709F1790A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F275382-3F86-4497-91E7-C762B47CEA35}
+	EndGlobalSection
+EndGlobal
