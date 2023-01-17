@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PayuniSDK
+namespace payuniSDK
 {
     public class ParameterModel
     {

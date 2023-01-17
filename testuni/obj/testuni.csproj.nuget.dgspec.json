@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\payuni\\testuni\\testuni.csproj": {}
+  },
+  "projects": {
+    "D:\\payuni\\payuniSDK\\payuniSDK.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\payuni\\payuniSDK\\payuniSDK.csproj",
+        "projectName": "payuniSDK",
+        "projectPath": "D:\\payuni\\payuniSDK\\payuniSDK.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\payuni\\testuni\\testuni.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\payuni\\testuni\\testuni.csproj",
+        "projectName": "testuni",
+        "projectPath": "D:\\payuni\\testuni\\testuni.csproj",
+        "packagesPath": "C:\\Users\\Wistronits.1302134-NB\\.nuget\\packages\\",
+        "outputPath": "D:\\payuni\\testuni\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Wistronits.1302134-NB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\payuni\\payuniSDK\\payuniSDK.csproj": {
+                "projectPath": "D:\\payuni\\payuniSDK\\payuniSDK.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

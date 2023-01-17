@@ -1,0 +1,10 @@
+C:\Users\Wistronits.1302134-NB\source\repos\payuni\payuni\bin\Debug\netcoreapp3.1\payuni.deps.json
+C:\Users\Wistronits.1302134-NB\source\repos\payuni\payuni\bin\Debug\netcoreapp3.1\payuni.dll
+C:\Users\Wistronits.1302134-NB\source\repos\payuni\payuni\bin\Debug\netcoreapp3.1\payuni.pdb
+C:\Users\Wistronits.1302134-NB\source\repos\payuni\payuni\obj\Debug\netcoreapp3.1\payuni.csproj.AssemblyReference.cache
+C:\Users\Wistronits.1302134-NB\source\repos\payuni\payuni\obj\Debug\netcoreapp3.1\payuni.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wistronits.1302134-NB\source\repos\payuni\payuni\obj\Debug\netcoreapp3.1\payuni.AssemblyInfoInputs.cache
+C:\Users\Wistronits.1302134-NB\source\repos\payuni\payuni\obj\Debug\netcoreapp3.1\payuni.AssemblyInfo.cs
+C:\Users\Wistronits.1302134-NB\source\repos\payuni\payuni\obj\Debug\netcoreapp3.1\payuni.csproj.CoreCompileInputs.cache
+C:\Users\Wistronits.1302134-NB\source\repos\payuni\payuni\obj\Debug\netcoreapp3.1\payuni.dll
+C:\Users\Wistronits.1302134-NB\source\repos\payuni\payuni\obj\Debug\netcoreapp3.1\payuni.pdb

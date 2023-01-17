@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 using System.Net;
 using System.IO;
 
-namespace PayuniSDK
+namespace payuniSDK
 {
     public class payuniAPI
     {
@@ -108,14 +108,20 @@ namespace PayuniSDK
                             {
                                 Result.Message = "TradeAmt is not setting";
                             }
-                            if (string.IsNullOrEmpty(EncryptInfo.CardNo))
-                            {
-                                Result.Message = "CardNo is not setting";
-                            }
-                            if (string.IsNullOrEmpty(EncryptInfo.CardCVC))
-                            {
-                                Result.Message = "CardCVC is not setting";
-                            }
+                            if (EncryptInfo.CreditHash == null) {
+                                if (string.IsNullOrEmpty(EncryptInfo.CardNo))
+                                {
+                                    Result.Message = "CardNo is not setting";
+                                }
+                                if (string.IsNullOrEmpty(EncryptInfo.CardExpired))
+                                {
+                                    Result.Message = "CardExpired is not setting";
+                                }
+                                if (string.IsNullOrEmpty(EncryptInfo.CardCVC))
+                                {
+                                    Result.Message = "CardCVC is not setting";
+                                }
+                            }                        
                             break;
                         case "trade_close":// 交易請退款
                             if (string.IsNullOrEmpty(EncryptInfo.TradeNo))
