@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "P6l5VB2zVuCx96jmIZmhUuMKHY1kDZNa1lr/gwyZ8SMauP/0o4ESxxPiH+hxRgtyUDrLQunKx3u0oWu3vEhxlw==",
+  "dgSpecHash": "R0s2CpkZASkanm0BqsUvcuwhCOnxpdnO+3Lwg3bDuj2V3Z/01evwK/PkLpFjpraaXkW5PXuLQuyZaHEI0ZdvHA==",
   "success": true,
-  "projectFilePath": "D:\\payuni\\testuni\\testuni.csproj",
+  "projectFilePath": "C:\\文件\\payuni\\payuni202304282\\payuni\\testuni\\testuni.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Wistronits.1302134-NB\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\ray.luo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

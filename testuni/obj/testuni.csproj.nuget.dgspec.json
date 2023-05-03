@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "D:\\payuni\\testuni\\testuni.csproj": {}
+    "C:\\文件\\payuni\\payuni202304282\\payuni\\testuni\\testuni.csproj": {}
   },
   "projects": {
-    "D:\\payuni\\payuniSDK\\payuniSDK.csproj": {
+    "C:\\文件\\payuni\\payuni202304282\\payuni\\payuniSDK\\payuniSDK.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\payuni\\payuniSDK\\payuniSDK.csproj",
+        "projectUniqueName": "C:\\文件\\payuni\\payuni202304282\\payuni\\payuniSDK\\payuniSDK.csproj",
         "projectName": "payuniSDK",
-        "projectPath": "D:\\payuni\\payuniSDK\\payuniSDK.csproj",
+        "projectPath": "C:\\文件\\payuni\\payuni202304282\\payuni\\payuniSDK\\payuniSDK.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -19,17 +19,20 @@
         "net472": {}
       }
     },
-    "D:\\payuni\\testuni\\testuni.csproj": {
+    "C:\\文件\\payuni\\payuni202304282\\payuni\\testuni\\testuni.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\payuni\\testuni\\testuni.csproj",
+        "projectUniqueName": "C:\\文件\\payuni\\payuni202304282\\payuni\\testuni\\testuni.csproj",
         "projectName": "testuni",
-        "projectPath": "D:\\payuni\\testuni\\testuni.csproj",
-        "packagesPath": "C:\\Users\\Wistronits.1302134-NB\\.nuget\\packages\\",
-        "outputPath": "D:\\payuni\\testuni\\obj\\",
+        "projectPath": "C:\\文件\\payuni\\payuni202304282\\payuni\\testuni\\testuni.csproj",
+        "packagesPath": "C:\\Users\\ray.luo\\.nuget\\packages\\",
+        "outputPath": "C:\\文件\\payuni\\payuni202304282\\payuni\\testuni\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Wistronits.1302134-NB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ray.luo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,14 +40,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\payuni\\payuniSDK\\payuniSDK.csproj": {
-                "projectPath": "D:\\payuni\\payuniSDK\\payuniSDK.csproj"
+              "C:\\文件\\payuni\\payuni202304282\\payuni\\payuniSDK\\payuniSDK.csproj": {
+                "projectPath": "C:\\文件\\payuni\\payuni202304282\\payuni\\payuniSDK\\payuniSDK.csproj"
               }
             }
           }
@@ -79,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
         }
       }
     }

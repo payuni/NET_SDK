@@ -51,5 +51,6 @@ namespace payuniSDK
 
         //credit_bind_cancel
         public string BindVal { get; set; }
+        public string IsPlatForm { get; set; }
     }
 }

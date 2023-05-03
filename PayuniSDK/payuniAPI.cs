@@ -86,9 +86,7 @@ namespace payuniSDK
                     switch (tradeType)
                     {
                         case "upp":// 交易建立 整合式支付頁
-                            break;
                         case "atm":// 交易建立 虛擬帳號幕後
-                            break;
                         case "cvs":// 交易建立 超商代碼幕後
                             if (string.IsNullOrEmpty(EncryptInfo.MerTradeNo))
                             {
@@ -150,6 +148,7 @@ namespace payuniSDK
                             }
                             break;
                         case "trade_refund_icash":// 愛金卡退款(ICASH)
+                        case "trade_refund_aftee":// 後支付退款(AFTEE)
                             if (string.IsNullOrEmpty(EncryptInfo.TradeNo))
                             {
                                 Result.Message = "TradeNo is not setting";
@@ -160,7 +159,6 @@ namespace payuniSDK
                             }
                             break;
                         case "trade_query":// 交易查詢
-                            break;
                         case "credit_bind_query":// 信用卡token查詢(約定)
                             break;
                         default:
@@ -320,6 +318,9 @@ namespace payuniSDK
                 case "trade_refund_icash":
                     tradeType = "trade/common/refund/icash";
                     break;
+                case "trade_refund_aftee":
+                    tradeType = "trade/common/refund/aftee";
+                    break;
             }
             return tradeType;
         }
@@ -329,11 +330,17 @@ namespace payuniSDK
         /// <param name="type"></param>
         private void SetParams(string type = "")
         {
+            string isPlatForm = string.Empty;
+            if (!string.IsNullOrEmpty(EncryptInfo.IsPlatForm)) {
+                isPlatForm = EncryptInfo.IsPlatForm;
+                EncryptInfo.IsPlatForm = string.Empty;
+            }
             Plain = GetQueryString(EncryptInfo);
             Parameter.MerID = EncryptInfo.MerID;
             Parameter.Version = "1.0";
             Parameter.EncryptInfo = Encrypt();
             Parameter.HashInfo = Hash(Parameter.EncryptInfo);
+            Parameter.isPlatForm = isPlatForm;
 
             ApiUrl = ApiUrl + type;
         }
