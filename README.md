@@ -58,7 +58,7 @@ encryptInfo.Timestamp= DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
     * 信用卡Token(約定) => credit_bind_query
     * 信用卡Token取消(約定/記憶卡號) => credit_bind_cancel
     * 愛金卡退款(ICASH) => trade_refund_icash
-* 其餘請參考[範例](https://github.com/payuni/PHP_SDK/tree/main/examples)
+* 其餘請參考[範例](https://github.com/payuni/NET_SDK/tree/main/example)
 
 * 原生C#
 ```csharp=
