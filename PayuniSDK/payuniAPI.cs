@@ -256,6 +256,7 @@ namespace payuniSDK
             htmlprint += "<input name='Version' type='hidden' value='" + Parameter.Version + "' />";
             htmlprint += "<input name='EncryptInfo' type='hidden' value='" + Parameter.EncryptInfo + "' />";
             htmlprint += "<input name='HashInfo' type='hidden' value='" + Parameter.HashInfo + "' />";
+            htmlprint += "<input name='IsPlatForm' type='hidden' value='" + Parameter.IsPlatForm + "' />";
             htmlprint += "</form></body></html>";
             return htmlprint;
         }
@@ -340,7 +341,7 @@ namespace payuniSDK
             Parameter.Version = "1.0";
             Parameter.EncryptInfo = Encrypt();
             Parameter.HashInfo = Hash(Parameter.EncryptInfo);
-            Parameter.isPlatForm = isPlatForm;
+            Parameter.IsPlatForm = isPlatForm;
 
             ApiUrl = ApiUrl + type;
         }

@@ -11,7 +11,7 @@ namespace payuniSDK
         public string EncryptInfo { get; set; }
         public string HashInfo { get; set; }
         public string Status { get; set; }
-        public string isPlatForm { get; set; }
+        public string IsPlatForm { get; set; }
 
     }
 }

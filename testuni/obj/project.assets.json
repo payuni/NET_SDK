@@ -63,21 +63,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ray.luo\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ray.luo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\文件\\payuni\\payuni202304282\\payuni\\testuni\\testuni.csproj",
+      "projectUniqueName": "C:\\Users\\ray.luo\\Downloads\\NET_SDK-main\\testuni\\testuni.csproj",
       "projectName": "testuni",
-      "projectPath": "C:\\文件\\payuni\\payuni202304282\\payuni\\testuni\\testuni.csproj",
+      "projectPath": "C:\\Users\\ray.luo\\Downloads\\NET_SDK-main\\testuni\\testuni.csproj",
       "packagesPath": "C:\\Users\\ray.luo\\.nuget\\packages\\",
-      "outputPath": "C:\\文件\\payuni\\payuni202304282\\payuni\\testuni\\obj\\",
+      "outputPath": "C:\\Users\\ray.luo\\Downloads\\NET_SDK-main\\testuni\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\ray.luo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -93,8 +89,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\文件\\payuni\\payuni202304282\\payuni\\payuniSDK\\payuniSDK.csproj": {
-              "projectPath": "C:\\文件\\payuni\\payuni202304282\\payuni\\payuniSDK\\payuniSDK.csproj"
+            "C:\\Users\\ray.luo\\Downloads\\NET_SDK-main\\payuniSDK\\payuniSDK.csproj": {
+              "projectPath": "C:\\Users\\ray.luo\\Downloads\\NET_SDK-main\\payuniSDK\\payuniSDK.csproj"
             }
           }
         }
@@ -129,7 +125,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
       }
     }
   }
