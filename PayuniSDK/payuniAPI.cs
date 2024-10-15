@@ -74,10 +74,12 @@ namespace payuniSDK
         /// </summary>
         /// <param name="EnInfo"></param>
         /// <param name="tradeType"></param>
+        /// <param name="version"></param>
         /// <returns></returns>
-        public string UniversalTrade(EncryptInfoModel EnInfo, string tradeType)
+        public string UniversalTrade(EncryptInfoModel EnInfo, string tradeType,string version = "1.0")
         {
             EncryptInfo = EnInfo;
+            Parameter.Version = version;
             Result = CheckParams();
             if (Result.Success)
             {
@@ -233,6 +235,11 @@ namespace payuniSDK
                 else
                 {
                     resultArr.Message = "missing EncryptInfo";
+                    switch (resultParam.Status) {
+                        case "API00003":
+                            resultArr.Message = "無API版本號";
+                            break;
+                    }
                 }
                 return resultArr;
             }
@@ -338,7 +345,6 @@ namespace payuniSDK
             }
             Plain = GetQueryString(EncryptInfo);
             Parameter.MerID = EncryptInfo.MerID;
-            Parameter.Version = "1.0";
             Parameter.EncryptInfo = Encrypt();
             Parameter.HashInfo = Hash(Parameter.EncryptInfo);
             Parameter.IsPlatForm = isPlatForm;

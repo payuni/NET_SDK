@@ -63,19 +63,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ray.luo\\.nuget\\packages\\": {}
+    "C:\\Users\\wistronits\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ray.luo\\Downloads\\NET_SDK-main\\testuni\\testuni.csproj",
+      "projectUniqueName": "C:\\Users\\wistronits\\Desktop\\payuni20240924\\testuni\\testuni.csproj",
       "projectName": "testuni",
-      "projectPath": "C:\\Users\\ray.luo\\Downloads\\NET_SDK-main\\testuni\\testuni.csproj",
-      "packagesPath": "C:\\Users\\ray.luo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ray.luo\\Downloads\\NET_SDK-main\\testuni\\obj\\",
+      "projectPath": "C:\\Users\\wistronits\\Desktop\\payuni20240924\\testuni\\testuni.csproj",
+      "packagesPath": "C:\\Users\\wistronits\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\wistronits\\Desktop\\payuni20240924\\testuni\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ray.luo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wistronits\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -89,8 +89,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ray.luo\\Downloads\\NET_SDK-main\\payuniSDK\\payuniSDK.csproj": {
-              "projectPath": "C:\\Users\\ray.luo\\Downloads\\NET_SDK-main\\payuniSDK\\payuniSDK.csproj"
+            "C:\\Users\\wistronits\\Desktop\\payuni20240924\\payuniSDK\\payuniSDK.csproj": {
+              "projectPath": "C:\\Users\\wistronits\\Desktop\\payuni20240924\\payuniSDK\\payuniSDK.csproj"
             }
           }
         }

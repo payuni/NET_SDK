@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\ray.luo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ray.luo\\.nuget\\packages"
+      "C:\\Users\\wistronits\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\wistronits\\.nuget\\packages"
     ]
   }
 }

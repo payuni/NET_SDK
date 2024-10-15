@@ -31,3 +31,14 @@ C:\Users\ray.luo\Downloads\NET_SDK-main\payuniSDK\obj\Debug\payuniSDK.csproj.Cor
 C:\Users\ray.luo\Downloads\NET_SDK-main\payuniSDK\obj\Debug\payuniSDK.csproj.CopyComplete
 C:\Users\ray.luo\Downloads\NET_SDK-main\payuniSDK\obj\Debug\payuniSDK.dll
 C:\Users\ray.luo\Downloads\NET_SDK-main\payuniSDK\obj\Debug\payuniSDK.pdb
+C:\Users\wistronits\Downloads\payuni20240613\payuniSDK\bin\Debug\payuniSDK.dll
+C:\Users\wistronits\Downloads\payuni20240613\payuniSDK\bin\Debug\payuniSDK.pdb
+C:\Users\wistronits\Downloads\payuni20240613\payuniSDK\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\wistronits\Downloads\payuni20240613\payuniSDK\bin\Debug\Newtonsoft.Json.dll
+C:\Users\wistronits\Downloads\payuni20240613\payuniSDK\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\wistronits\Downloads\payuni20240613\payuniSDK\bin\Debug\Newtonsoft.Json.xml
+C:\Users\wistronits\Downloads\payuni20240613\payuniSDK\obj\Debug\payuniSDK.csproj.AssemblyReference.cache
+C:\Users\wistronits\Downloads\payuni20240613\payuniSDK\obj\Debug\payuniSDK.csproj.CoreCompileInputs.cache
+C:\Users\wistronits\Downloads\payuni20240613\payuniSDK\obj\Debug\payuniSDK.csproj.CopyComplete
+C:\Users\wistronits\Downloads\payuni20240613\payuniSDK\obj\Debug\payuniSDK.dll
+C:\Users\wistronits\Downloads\payuni20240613\payuniSDK\obj\Debug\payuniSDK.pdb
