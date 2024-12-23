@@ -90,81 +90,95 @@ namespace payuniSDK
                         case "upp":// 交易建立 整合式支付頁
                         case "atm":// 交易建立 虛擬帳號幕後
                         case "cvs":// 交易建立 超商代碼幕後
+                        case "linepay":// 交易建立 Line Pay 幕後
+                        case "aftee_direct"://交易建立 AFTEE 幕後
+                            if (tradeType == "linepay") 
+                            {
+                                Parameter.Version = "1.1";
+                            }
                             if (string.IsNullOrEmpty(EncryptInfo.MerTradeNo))
                             {
-                                Result.Message = "MerTradeNo is not setting";
+                                Result.Message = "商店訂單編號為必填(MerTradeNo is not setting)";
                             }
                             if (string.IsNullOrEmpty(EncryptInfo.TradeAmt))
                             {
-                                Result.Message = "TradeAmt is not setting";
+                                Result.Message = "訂單金額為必填(TradeAmt is not setting)";
                             }
                             break;
                         case "credit":// 交易建立 信用卡幕後
                             if (string.IsNullOrEmpty(EncryptInfo.MerTradeNo))
                             {
-                                Result.Message = "MerTradeNo is not setting";
+                                Result.Message = "商店訂單編號為必填(MerTradeNo is not setting)";
                             }
                             if (string.IsNullOrEmpty(EncryptInfo.TradeAmt))
                             {
-                                Result.Message = "TradeAmt is not setting";
+                                Result.Message = "訂單金額為必填(TradeAmt is not setting)";
                             }
                             if (EncryptInfo.CreditHash == null) {
                                 if (string.IsNullOrEmpty(EncryptInfo.CardNo))
                                 {
-                                    Result.Message = "CardNo is not setting";
+                                    Result.Message = "信用卡卡號為必填(CardNo is not setting)";
                                 }
                                 if (string.IsNullOrEmpty(EncryptInfo.CardExpired))
                                 {
-                                    Result.Message = "CardExpired is not setting";
+                                    Result.Message = "信用卡到期年月為必填(CardExpired is not setting)";
                                 }
                                 if (string.IsNullOrEmpty(EncryptInfo.CardCVC))
                                 {
-                                    Result.Message = "CardCVC is not setting";
+                                    Result.Message = "信用卡安全碼為必填(CardCVC is not setting)";
                                 }
                             }                        
                             break;
                         case "trade_close":// 交易請退款
                             if (string.IsNullOrEmpty(EncryptInfo.TradeNo))
                             {
-                                Result.Message = "TradeNo is not setting";
+                                Result.Message = "uni序號為必填(TradeNo is not setting)";
                             }
                             if (string.IsNullOrEmpty(EncryptInfo.CloseType))
                             {
-                                Result.Message = "CloseType is not setting";
+                                Result.Message = "關帳類型為必填(CloseType is not setting)";
                             }
                             break;
                         case "trade_cancel":// 交易取消授權
+                        case "trade_confirm_aftee":// 後支付確認(AFTEE)
                             if (string.IsNullOrEmpty(EncryptInfo.TradeNo))
                             {
-                                Result.Message = "TradeNo is not setting";
+                                Result.Message = "uni序號為必填(TradeNo is not setting)";
+                            }
+                            break;
+                        case "cancel_cvs": // 交易取消超商代碼(CVS)
+                            if (string.IsNullOrEmpty(EncryptInfo.PayNo))
+                            {
+                                Result.Message = "超商代碼為必填(PayNo is not setting)";
                             }
                             break;
                         case "credit_bind_cancel":// 信用卡token取消(約定/記憶卡號)
                             if (string.IsNullOrEmpty(EncryptInfo.UseTokenType))
                             {
-                                Result.Message = "UseTokenType is not setting";
+                                Result.Message = "信用卡Token類型為必填(UseTokenType is not setting)";
                             }
                             if (string.IsNullOrEmpty(EncryptInfo.BindVal))
                             {
-                                Result.Message = "BindVal is not setting";
+                                Result.Message = "綁定回傳值 /信用卡Token(BindVal is not setting)";
                             }
                             break;
                         case "trade_refund_icash":// 愛金卡退款(ICASH)
                         case "trade_refund_aftee":// 後支付退款(AFTEE)
+                        case "trade_refund_linepay":// LINE Pay退款(LINE)
                             if (string.IsNullOrEmpty(EncryptInfo.TradeNo))
                             {
-                                Result.Message = "TradeNo is not setting";
+                                Result.Message = "uni序號為必填(TradeNo is not setting)";
                             }
                             if (string.IsNullOrEmpty(EncryptInfo.TradeAmt))
                             {
-                                Result.Message = "TradeAmt is not setting";
+                                Result.Message = "訂單金額為必填(TradeAmt is not setting)";
                             }
                             break;
                         case "trade_query":// 交易查詢
                         case "credit_bind_query":// 信用卡token查詢(約定)
                             break;
                         default:
-                            Result.Message = "Unknown params";
+                            Result.Message = "未提供該參數類型(Unknown params)";
                             break;
                     }
 
@@ -221,7 +235,7 @@ namespace payuniSDK
                         string chkHash = Hash(resultParam.EncryptInfo);
                         if (chkHash != resultParam.HashInfo)
                         {
-                            resultArr.Message = "Hash mismatch";
+                            resultArr.Message = "Hash值比對失敗(Hash mismatch)";
                             return resultArr;
                         }
                         resultArr.Message = Decrypt(resultParam.EncryptInfo);
@@ -229,12 +243,12 @@ namespace payuniSDK
                     }
                     else
                     {
-                        resultArr.Message = "missing HashInfo";
+                        resultArr.Message = "缺少Hash資訊(missing HashInfo)";
                     }
                 }
                 else
                 {
-                    resultArr.Message = "missing EncryptInfo";
+                    resultArr.Message = "缺少加密字串(missing EncryptInfo)";
                     switch (resultParam.Status) {
                         case "API00003":
                             resultArr.Message = "無API版本號";
@@ -245,7 +259,7 @@ namespace payuniSDK
             }
             catch
             {
-                resultArr.Message = "Result must be an array";
+                resultArr.Message = "傳入參數需為陣列(Result must be an array)";
                 return resultArr;
             }            
         }
@@ -329,6 +343,12 @@ namespace payuniSDK
                 case "trade_refund_aftee":
                     tradeType = "trade/common/refund/aftee";
                     break;
+                case "trade_confirm_aftee":
+                    tradeType = "trade/common/confirm/aftee";
+                    break;
+                case "trade_refund_linepay":
+                    tradeType = "trade/common/refund/linepay";
+                    break;
             }
             return tradeType;
         }
@@ -374,12 +394,12 @@ namespace payuniSDK
             {
                 if (string.IsNullOrEmpty(EncryptInfo.MerID))
                 {
-                    Result.Message = "MerID is not setting";
+                    Result.Message = "商店代號為必填(MerID is not setting)";
                     return Result;
                 }
                 if (string.IsNullOrEmpty(EncryptInfo.Timestamp.ToString()))
                 {
-                    Result.Message = "Timestamp is not setting";
+                    Result.Message = "時間戳記為必填(Timestamp is not setting)";
                     return Result;
                 }
                 Result.Success = true;

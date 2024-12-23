@@ -44,7 +44,8 @@ namespace payuniSDK
         public string CardExpired { get; set; }
         public string CreditHash { get; set; }
         public string API3D { get; set; }
-        
+        public string PayNo { get; set; }
+
         //trade_close
         public string CloseType { get; set; }
         public string TradeNo { get; set; }

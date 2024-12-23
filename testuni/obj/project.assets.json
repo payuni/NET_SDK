@@ -68,11 +68,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wistronits\\Desktop\\payuni20240924\\testuni\\testuni.csproj",
+      "projectUniqueName": "D:\\payuni20240924\\testuni\\testuni.csproj",
       "projectName": "testuni",
-      "projectPath": "C:\\Users\\wistronits\\Desktop\\payuni20240924\\testuni\\testuni.csproj",
+      "projectPath": "D:\\payuni20240924\\testuni\\testuni.csproj",
       "packagesPath": "C:\\Users\\wistronits\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wistronits\\Desktop\\payuni20240924\\testuni\\obj\\",
+      "outputPath": "D:\\payuni20240924\\testuni\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wistronits\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\wistronits\\Desktop\\payuni20240924\\payuniSDK\\payuniSDK.csproj": {
-              "projectPath": "C:\\Users\\wistronits\\Desktop\\payuni20240924\\payuniSDK\\payuniSDK.csproj"
+            "D:\\payuni20240924\\payuniSDK\\payuniSDK.csproj": {
+              "projectPath": "D:\\payuni20240924\\payuniSDK\\payuniSDK.csproj"
             }
           }
         }
