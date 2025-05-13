@@ -296,6 +296,8 @@ namespace payuniSDK
             request.ContentType = "application/x-www-form-urlencoded";
             request.Timeout = 1000;
             request.ContentLength = postData.Length;
+            request.UserAgent = "PRESCOSDKAPI";
+
             // 寫入 Post Body Message 資料流
             using (Stream st = request.GetRequestStream())
             {

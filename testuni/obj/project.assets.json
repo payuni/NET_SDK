@@ -63,19 +63,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wistronits\\.nuget\\packages\\": {}
+    "C:\\Users\\wistronits\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\payuni20240924\\testuni\\testuni.csproj",
+      "projectUniqueName": "D:\\payuni20241204\\testuni\\testuni.csproj",
       "projectName": "testuni",
-      "projectPath": "D:\\payuni20240924\\testuni\\testuni.csproj",
+      "projectPath": "D:\\payuni20241204\\testuni\\testuni.csproj",
       "packagesPath": "C:\\Users\\wistronits\\.nuget\\packages\\",
-      "outputPath": "D:\\payuni20240924\\testuni\\obj\\",
+      "outputPath": "D:\\payuni20241204\\testuni\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\wistronits\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -83,14 +88,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://prescoec.pkgs.visualstudio.com/_packaging/Presco.Nuget/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\payuni20240924\\payuniSDK\\payuniSDK.csproj": {
-              "projectPath": "D:\\payuni20240924\\payuniSDK\\payuniSDK.csproj"
+            "D:\\payuni20241204\\payuniSDK\\payuniSDK.csproj": {
+              "projectPath": "D:\\payuni20241204\\payuniSDK\\payuniSDK.csproj"
             }
           }
         }

@@ -53,3 +53,14 @@ D:\payuni20240924\payuniSDK\obj\Debug\payuniSDK.csproj.CoreCompileInputs.cache
 D:\payuni20240924\payuniSDK\obj\Debug\payuniSDK.csproj.CopyComplete
 D:\payuni20240924\payuniSDK\obj\Debug\payuniSDK.dll
 D:\payuni20240924\payuniSDK\obj\Debug\payuniSDK.pdb
+D:\payuni20241204\payuniSDK\bin\Debug\payuniSDK.dll
+D:\payuni20241204\payuniSDK\bin\Debug\payuniSDK.pdb
+D:\payuni20241204\payuniSDK\bin\Debug\BouncyCastle.Crypto.dll
+D:\payuni20241204\payuniSDK\bin\Debug\Newtonsoft.Json.dll
+D:\payuni20241204\payuniSDK\bin\Debug\BouncyCastle.Crypto.xml
+D:\payuni20241204\payuniSDK\bin\Debug\Newtonsoft.Json.xml
+D:\payuni20241204\payuniSDK\obj\Debug\payuniSDK.csproj.AssemblyReference.cache
+D:\payuni20241204\payuniSDK\obj\Debug\payuniSDK.csproj.CoreCompileInputs.cache
+D:\payuni20241204\payuniSDK\obj\Debug\payuniSDK.csproj.CopyComplete
+D:\payuni20241204\payuniSDK\obj\Debug\payuniSDK.dll
+D:\payuni20241204\payuniSDK\obj\Debug\payuniSDK.pdb
