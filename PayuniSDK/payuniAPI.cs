@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Web;
+﻿using Newtonsoft.Json;
 using Org.BouncyCastle.Crypto.Engines;
 using Org.BouncyCastle.Crypto.Modes;
 using Org.BouncyCastle.Crypto.Parameters;
-using Newtonsoft.Json;
-using System.Net;
-using System.IO;
+using System;
+using System.Linq;
+using System.Net.Http;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
 
 namespace payuniSDK
 {
@@ -289,28 +288,18 @@ namespace payuniSDK
         private string CurlApi()
         {
             string parame = GetQueryString(Parameter);
-            byte[] postData = Encoding.UTF8.GetBytes(parame);
-
-            HttpWebRequest request = HttpWebRequest.Create(ApiUrl) as HttpWebRequest;
-            request.Method = "POST";
-            request.ContentType = "application/x-www-form-urlencoded";
-            request.Timeout = 1000;
-            request.ContentLength = postData.Length;
-            request.UserAgent = "PRESCOSDKAPI";
-
-            // 寫入 Post Body Message 資料流
-            using (Stream st = request.GetRequestStream())
+            string result = string.Empty;
+            var httpContet = new StringContent(parame, Encoding.UTF8, "application/x-www-form-urlencoded");
+            using (HttpClient client = new HttpClient())
             {
-                st.Write(postData, 0, postData.Length);
-            }
-            string result = "";
-            // 取得回應資料
-            using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)
-            {
-                using (StreamReader sr = new StreamReader(response.GetResponseStream()))
+                client.DefaultRequestHeaders.UserAgent.ParseAdd("PRESCOSDKAPI");
+                client.Timeout = new TimeSpan(0, 0, 1000);
+                Task.Run(async () =>
                 {
-                    result = sr.ReadToEnd();
-                }
+                    HttpResponseMessage response = await client.PostAsync(ApiUrl, httpContet);
+                    result = await response.Content.ReadAsStringAsync();
+                }).GetAwaiter()
+                  .GetResult();
             }
             return result;
         }
